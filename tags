@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INVALID	main.c	/^    START, NUMBER, OPERATOR, INVALID$/;"	e	enum:LastInp	file:
+LIST	list/list.h	3;"	d
+LastInp	main.c	/^enum LastInp{$/;"	g	file:
+NUMBER	main.c	/^    START, NUMBER, OPERATOR, INVALID$/;"	e	enum:LastInp	file:
+OPERATOR	main.c	/^    START, NUMBER, OPERATOR, INVALID$/;"	e	enum:LastInp	file:
+SIZE	stack/stack.h	3;"	d
+START	main.c	/^    START, NUMBER, OPERATOR, INVALID$/;"	e	enum:LastInp	file:
+arr	stack/stack.h	/^    int *arr;$/;"	m	struct:stack
+buf	main.c	/^int buf[100];$/;"	v
+buf_num	main.c	/^int buf_num = -1;$/;"	v
+concat	list/list.c	/^void concat(list *l, list b)$/;"	f
+data	list/list.h	/^    int data;$/;"	m	struct:node
+display_list	list/list.c	/^void display_list(list l)$/;"	f
+evaluate	main.c	/^void evaluate(char c)$/;"	f
+get_number	main.c	/^void get_number()$/;"	f
+getch	main.c	/^int getch(){$/;"	f
+init	stack/stack.c	/^void init(stack *s)$/;"	f
+init_stack_list	stack_list_of_numbers/stack_list.c	/^void init_stack_list(stack_list *s) { $/;"	f
+insert_iteratively	list/list.c	/^int insert_iteratively(list *head, int pos, int val)$/;"	f
+insert_recursively	list/list.c	/^void insert_recursively(list *l, int pos, int val)$/;"	f
+isDigit	main.c	/^int isDigit(char a)$/;"	f
+isEmpty	stack/stack.c	/^int isEmpty(stack *s1)$/;"	f
+isFull	stack/stack.c	/^int isFull(stack *s1)$/;"	f
+l	stack_list_of_numbers/stack_list.h	/^    list l;$/;"	m	struct:stack_list_node
+list	list/list.h	/^typedef node *list;$/;"	t
+list_add_data	list/list.c	/^int list_add_data(list *head, int data)$/;"	f
+list_init	list/list.c	/^void list_init(list * head)$/;"	f
+list_reverse	list/list.c	/^void list_reverse(list *head)$/;"	f
+main	main.c	/^int main(){$/;"	f
+next	list/list.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+next	stack_list_of_numbers/stack_list.h	/^    struct stack_list_node *next;$/;"	m	struct:stack_list_node	typeref:struct:stack_list_node::stack_list_node
+node	list/list.h	/^struct node {$/;"	s
+node	list/list.h	/^typedef struct node node;$/;"	t	typeref:struct:node
+pop	stack/stack.c	/^int pop(stack *s1)$/;"	f
+prec	main.c	/^int prec(char a)$/;"	f
+printStack	stack/stack.c	/^void printStack(stack *s1)$/;"	f
+printstack_list	stack_list_of_numbers/stack_list.c	/^void printstack_list(stack_list s1)$/;"	f
+push	stack/stack.c	/^void push(stack *s1, int data)$/;"	f
+push_stack_list	stack_list_of_numbers/stack_list.c	/^void push_stack_list(stack_list *s1, list l)$/;"	f
+remove_data	list/list.c	/^int remove_data(list *head)$/;"	f
+search	list/list.c	/^node * search(list l, int data)$/;"	f
+size	stack/stack.h	/^    int top, size;$/;"	m	struct:stack
+stack	stack/stack.h	/^typedef struct stack$/;"	s
+stack	stack/stack.h	/^} stack;$/;"	t	typeref:struct:stack
+stack_list	stack_list_of_numbers/stack_list.h	/^typedef stack_list_node *stack_list;$/;"	t
+stack_list_isEmpty	stack_list_of_numbers/stack_list.c	/^int stack_list_isEmpty(stack_list s1)$/;"	f
+stack_list_node	stack_list_of_numbers/stack_list.h	/^struct stack_list_node$/;"	s
+stack_list_node	stack_list_of_numbers/stack_list.h	/^typedef struct stack_list_node stack_list_node;$/;"	t	typeref:struct:stack_list_node
+stack_list_pop	stack_list_of_numbers/stack_list.c	/^list stack_list_pop(stack_list * s1)$/;"	f
+str	main.c	/^list str;$/;"	v
+str	main.c	/^list_init(&str);$/;"	v
+top	stack/stack.h	/^    int top, size;$/;"	m	struct:stack
+ungetch	main.c	/^int ungetch(int a)$/;"	f

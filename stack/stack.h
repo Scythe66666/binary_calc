@@ -7,9 +7,9 @@ typedef struct stack
     int top, size;
 } stack;
 
-void init(stack *s1);
-void push(stack *s1, int data);
-int pop(stack *s1);
-int isEmpty(stack *s1);
-int isFull(stack *s1);
-void printStack(stack *s1);
+void stack_init(stack *s1);
+void stack_push(stack *s1, int data);
+int stack_pop(stack *s1);
+int stack_isEmpty(stack *s1);
+int stack_isFull(stack *s1);
+void stack_printStack(stack *s1);

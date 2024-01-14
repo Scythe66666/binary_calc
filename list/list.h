@@ -17,18 +17,18 @@ void list_init(list* head);
 
 int list_add_data(list *head, int data);
 
-int remove_data(list *head);
+int list_remove_data(list *head);
 
-void display_list(list l);
+void list_display(list l);
 
-void concat(list *l, list n);
+void list_concat(list *l, list n);
 
-node *search(list l, int data);
+node * list_search(list l, int data);
 
 void list_reverse(list *head);
-int insert_iteratively(list *head, int pos, int val);
 
+int list_insert_iteratively(list *head, int pos, int val);
 
-void insert_recursively(list *l, int pos, int val);
+void list_insert_recursively(list *l, int pos, int val);
 
 #endif // !LIST

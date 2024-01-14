@@ -27,7 +27,7 @@ int list_add_data(list *head, int data)
     return 1;
 }
 
-int remove_data(list *head)
+int list_remove_data(list *head)
 {
     if(*head == NULL)
         return INT_MIN;
@@ -49,7 +49,7 @@ int remove_data(list *head)
     return temp;
 }
 
-void display_list(list l)
+void list_data(list l)
 {
     printf("[ ");
     while(l)
@@ -60,7 +60,7 @@ void display_list(list l)
     printf("]\n");
 }
 
-void concat(list *l, list b)
+void list_concat(list *l, list b)
 {
     while(b)
     {
@@ -69,7 +69,7 @@ void concat(list *l, list b)
     }
 }
 
-node * search(list l, int data)
+node * lsit_search(list l, int data)
 {
     while(l)
     {
@@ -136,7 +136,7 @@ void list_reverse(list *head)
 // }
 
 
-int insert_iteratively(list *head, int pos, int val)
+int list_insert_iteratively(list *head, int pos, int val)
 {
     list *traverse = head;
     while(pos != 1)

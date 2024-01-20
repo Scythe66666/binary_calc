@@ -1,9 +1,9 @@
 #include "stack.h"
 #include <stdio.h>
 
-void stack_init(stack *s)
+void stack_init(stack *s, int size)
 {
-    s->size = SIZE;
+    s->size = size;
     s->arr = (int *)malloc(sizeof(int) * s->size);
     s->top = -1;
 }
@@ -42,10 +42,10 @@ int stack_isFull(stack *s1)
     return 0;
 }
 
-void stack_print(stack *s1)
+void stack_print(stack s1)
 {
-    for (int i = 0; i < s1->top; i++)
-        printf("%d\t", s1->arr[i]);
+    for (int i = 0; i <= s1.top; i++)
+        printf("%c\t", s1.arr[i]);
     printf("\n");
 }
 

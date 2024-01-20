@@ -1,5 +1,4 @@
 #include "stack_list.h"
-#include <stdio.h>
 
 void stack_list_init(stack_list *s) { 
     *s = NULL;
@@ -39,8 +38,16 @@ void stack_list_display(stack_list s1)
         return ;
     stack_list_node* traverse = s1;
     while (traverse) {
-        display_list(traverse->l);
+        list_display(traverse->l);
         traverse = traverse->next;
         printf("\n");
     }
+}
+//changes the sign of the top element
+void stack_list_change_sign(stack_list *s1)
+{
+    if((*s1)->sign == POSITIVE)
+        (*s1)->sign = NEGATIVE;
+    else
+        (*s1)->sign = POSITIVE;
 }

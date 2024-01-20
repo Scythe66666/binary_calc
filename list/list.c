@@ -49,7 +49,7 @@ int list_remove_data(list *head)
     return temp;
 }
 
-void list_data(list l)
+void list_display(list l)
 {
     printf("[ ");
     while(l)
